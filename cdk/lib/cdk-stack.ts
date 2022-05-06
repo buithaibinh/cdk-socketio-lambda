@@ -114,7 +114,7 @@ export class CdkStack extends Stack {
 
     // Get the Function URL as output
     new CfnOutput(this, 'FunctionURL', {
-      value: `https://${cfnFuncUrl.getAtt('FunctionUrl').toString()}`,
+      value: `${cfnFuncUrl.getAtt('FunctionUrl').toString()}`,
     });
   }
 }
