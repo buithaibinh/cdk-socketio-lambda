@@ -2,6 +2,7 @@
 
 This is P.O.C for use case `emit socket.io event from lambda`
 
+![](images/arch.png)
 ## Deploy
 
 ```bash
