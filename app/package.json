@@ -1,0 +1,20 @@
+{
+  "name": "cdk-socketio-lambda",
+  "version": "1.0.0",
+  "description": "Demo use lambda emit event from lambda",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "Binh Bui",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
