@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-IMAGE=${IMAGE:-"binhbv/cdk-socketio-server"}
+IMAGE=${IMAGE:-"binhbv/poc-cdk-socketio-server"}
 PLATFORM=${PLATFORM:-"linux/arm64"}
 
 tags=""
