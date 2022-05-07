@@ -1,8 +1,1 @@
-{
-  "SampleSocketIO": {
-    "FunctionURL": "https://https://upv2sv2twvfdjv2qstdwjbteri0xstjp.lambda-url.ap-southeast-1.on.aws/",
-    "WebSocketURL": "http://Sampl-ApiEc-PBBPBGLAPT4M-1065253365.ap-southeast-1.elb.amazonaws.com",
-    "ApiEcsServiceLoadBalancerDNS44285D37": "Sampl-ApiEc-PBBPBGLAPT4M-1065253365.ap-southeast-1.elb.amazonaws.com",
-    "ApiEcsServiceServiceURLC3AC31D2": "http://Sampl-ApiEc-PBBPBGLAPT4M-1065253365.ap-southeast-1.elb.amazonaws.com"
-  }
-}
+{}

@@ -16,3 +16,4 @@ env.sh
 metadata.xml
 **/*.mp4
 cdk/cdk.out
+cdk/config.json
