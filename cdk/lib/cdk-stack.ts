@@ -80,6 +80,7 @@ export class CdkStack extends Stack {
     const lambdaFunction = new lambda.Function(this, 'LambdaFunction', {
       runtime: lambda.Runtime.NODEJS_12_X,
       handler: 'index.handler',
+      architecture: lambda.Architecture.ARM_64,
       code: lambda.Code.fromAsset(path.join(__dirname, '../../lambda')),
       environment: {
         WEB_SOCKET_URL: `http://${service.loadBalancer.loadBalancerDnsName}`,

@@ -1,11 +1,19 @@
 const WEB_SOCKET_URL = process.env.WEB_SOCKET_URL || 'http://localhost:3000';
 
 const io = require('socket.io-client');
-const socket = io.connect(WEB_SOCKET_URL);
-
 const handler = async (event) => {
-  let payload = { id: '1', message: 'Hello World' };
-  socket.emit('from lambda', payload);
+  const socket = io(WEB_SOCKET_URL);
+  socket.on('connect', () => {
+    console.log('connected');
+    let payload = { id: Date.now(), message: 'Hello World' };
+
+    console.log('sending payload', payload);
+    socket.emit('from lambda', payload);
+    // disconnect socket to end lambda execution
+    socket.disconnect();
+    console.log('disconnected');
+  });
+
   return 'Sent message!';
 };
 
